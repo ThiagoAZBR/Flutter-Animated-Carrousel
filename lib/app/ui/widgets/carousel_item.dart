@@ -33,7 +33,9 @@ class CarouselItem extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 8),
                   child: Text(
                     _title,
-                    style: AppTextStyles.montserratSubtitle(),
+                    style: AppTextStyles.montserratSubtitle(
+                      color: AppColors.light,
+                    ),
                   ),
                 )),
               )
