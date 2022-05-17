@@ -5,12 +5,12 @@ class Carousel extends StatelessWidget {
   final List<String> _assets;
   final List<String> _titles;
   final ScrollController _scrollController;
-  const Carousel(
-      {Key? key,
-      required List<String> assets,
-      required List<String> titles,
-      required ScrollController scrollController,})
-      : _assets = assets,
+  const Carousel({
+    Key? key,
+    required List<String> assets,
+    required List<String> titles,
+    required ScrollController scrollController,
+  })  : _assets = assets,
         _titles = titles,
         _scrollController = scrollController,
         super(key: key);
@@ -18,7 +18,7 @@ class Carousel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 232,
+      height: 238,
       child: AbsorbPointer(
         child: ListView.builder(
           controller: _scrollController,

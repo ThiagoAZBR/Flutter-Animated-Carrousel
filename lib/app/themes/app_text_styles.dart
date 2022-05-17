@@ -4,51 +4,51 @@ import 'package:flutter/material.dart';
 class AppTextStyles {
   // Default color for text is light, so it's optional to change text color
 
-  static TextStyle robotoHeadline([Color color = AppColors.light]) => TextStyle(
-        fontSize: 34,
+  static TextStyle montserratTitle({
+    Color color = AppColors.dark,
+    FontWeight fontWeight = FontWeight.bold,
+  }) =>
+      TextStyle(
+        fontSize: 42,
         color: color,
-        fontFamily: 'Roboto',
+        fontFamily: 'Montserrat',
         letterSpacing: 0.25,
-        fontWeight: FontWeight.bold,
+        fontWeight: fontWeight,
       );
 
-  static TextStyle robotoButton([Color color = AppColors.light]) => TextStyle(
+  static TextStyle montserratButton({
+    Color color = AppColors.dark,
+    FontWeight fontWeight = FontWeight.w600,
+  }) =>
+      TextStyle(
         fontSize: 14,
         color: color,
-        fontFamily: 'Roboto',
+        fontFamily: 'Montserrat',
         letterSpacing: 1.25,
-        fontWeight: FontWeight.w600,
+        fontWeight: fontWeight,
       );
 
-  static TextStyle robotoSubtitleOne([Color color = AppColors.light]) =>
-      TextStyle(
-        fontSize: 16,
-        color: color,
-        fontFamily: 'Roboto',
-        letterSpacing: 0.15,
-      );
-
-  static TextStyle robotoSubtitleTwo([Color color = AppColors.light]) =>
+  static TextStyle montserratBody({
+    Color color = AppColors.dark,
+    FontWeight? fontWeight,
+  }) =>
       TextStyle(
         fontSize: 14,
         color: color,
-        fontFamily: 'Roboto',
-        letterSpacing: 0.1,
-        fontWeight: FontWeight.w600,
-      );
-
-  static TextStyle robotoBody([Color color = AppColors.light]) => TextStyle(
-        fontSize: 14,
-        color: color,
-        fontFamily: 'Roboto',
+        fontFamily: 'Montserrat',
         letterSpacing: 0.25,
+        fontWeight: fontWeight,
       );
 
-  static TextStyle robotoCaption([Color color = AppColors.light]) => TextStyle(
+  static TextStyle montserratSubtitle({
+    Color color = AppColors.dark,
+    FontWeight fontWeight = FontWeight.w600,
+  }) =>
+      TextStyle(
         fontSize: 12,
         color: color,
-        fontFamily: 'Roboto',
+        fontFamily: 'Montserrat',
         letterSpacing: 0.25,
-        fontWeight: FontWeight.w600,
+        fontWeight: fontWeight,
       );
 }

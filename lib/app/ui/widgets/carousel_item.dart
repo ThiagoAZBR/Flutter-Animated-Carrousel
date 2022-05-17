@@ -14,9 +14,7 @@ class CarouselItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(
-        horizontal: 16
-      ),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(16),
         child: SizedBox(
@@ -35,7 +33,7 @@ class CarouselItem extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 8),
                   child: Text(
                     _title,
-                    style: AppTextStyles.robotoCaption(),
+                    style: AppTextStyles.montserratSubtitle(),
                   ),
                 )),
               )
