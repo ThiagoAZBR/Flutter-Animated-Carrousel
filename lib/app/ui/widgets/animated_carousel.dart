@@ -2,14 +2,14 @@ import 'package:animated_carrousel/app/themes/app_assets.dart';
 import 'package:animated_carrousel/app/ui/widgets/carousel.dart';
 import 'package:flutter/material.dart';
 
-class PayWallCarrousel extends StatefulWidget {
-  const PayWallCarrousel({Key? key}) : super(key: key);
+class AnimatedCarousel extends StatefulWidget {
+  const AnimatedCarousel({Key? key}) : super(key: key);
 
   @override
-  State<PayWallCarrousel> createState() => _PayWallCarrouselState();
+  State<AnimatedCarousel> createState() => _AnimatedCarouselState();
 }
 
-class _PayWallCarrouselState extends State<PayWallCarrousel> {
+class _AnimatedCarouselState extends State<AnimatedCarousel> {
   int _scrollCounter = 0;
   late double _maxScroll;
 

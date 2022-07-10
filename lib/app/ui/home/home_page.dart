@@ -1,6 +1,6 @@
 import 'package:animated_carrousel/app/themes/app_colors.dart';
 import 'package:animated_carrousel/app/themes/app_text_styles.dart';
-import 'package:animated_carrousel/app/ui/widgets/paywall_carrousel.dart';
+import 'package:animated_carrousel/app/ui/widgets/animated_carousel.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            const Center(child: PayWallCarrousel()),
+            const Center(child: AnimatedCarousel()),
             Align(
               alignment: Alignment.bottomCenter,
               child: Padding(
